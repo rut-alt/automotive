@@ -1,10 +1,13 @@
 import streamlit as st
 
 # Configuración inicial
-st.set_page_config(page_title="DigitalDrive by Rut", page_icon="🚗", layout="centered")
+st.set_page_config(page_title="DigitalDrive by Rut", page_icon="logo_ams.png", layout="centered")
 
-# Cabecera principal
-st.title("🚗 DigitalDrive by Rut")
+# Mostrar el logo en la parte superior
+st.image("logo_ams.png", width=200)  # Ajusta el ancho si lo ves muy grande o pequeño
+
+# Títulos principales
+st.title("DigitalDrive by Rut")
 st.subheader("Soluciones digitales para el sector de la automoción")
 
 st.markdown("---")
@@ -12,9 +15,8 @@ st.markdown("---")
 # Menú lateral
 menu = st.sidebar.radio("Explora los servicios", ["Inicio", "Paneles y Datos", "Email Marketing", "Automatización de Procesos"])
 
-# Contenido dinámico según selección
+# Contenido según la opción elegida
 if menu == "Inicio":
-    st.image("https://i.imgur.com/OyQJQyX.png", width=250)  # Puedes cambiar esto por tu logo
     st.markdown("""
     Soy Rut, experta en soluciones digitales enfocadas en el mundo de la automoción.
     
